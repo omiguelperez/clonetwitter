@@ -1,13 +1,19 @@
 {
   "name": "clonetwitter",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Oscar Pérez <mr.omiguelperez@gmail.com>",
+  "homepage": "https//github.com/omiguelperez",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
+    "watch": "ionic-app-scripts watch",
     "lint": "ionic-app-scripts lint",
+    "serve:before": "watch",
+    "emulate:before": "build",
+    "deploy:before": "build",
+    "build:before": "build",
+    "run:before": "build",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve"
   },
