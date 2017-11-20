@@ -13,6 +13,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 
+let routerConfig = {
+  links: [
+    { component: LoginPage, name: 'Login', segment: 'login' },
+    { component: TabsPage, name: 'tabs', segment: 'tabs' }
+  ]
+}
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +31,7 @@ import { LoginPage } from '../pages/login/login';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {}, routerConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
