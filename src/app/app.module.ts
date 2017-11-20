@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { VerNotificationPage } from '../pages/notification/verNotification';
 
 let routerConfig = {
   links: [
@@ -27,7 +28,8 @@ let routerConfig = {
     ProfilePage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    VerNotificationPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ let routerConfig = {
     ProfilePage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    VerNotificationPage
   ],
   providers: [
     StatusBar,
