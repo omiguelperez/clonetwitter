@@ -86,3 +86,30 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$colors: (
+  primary:    #04B404,
+  secondary:  #5882FA,
+  danger:     #FE2E2E,
+  light:      #A9E2F3,
+  dark:       #000000,
+
+  reply: (
+    base: #55acee,
+    contrast: #ffffff
+  ),
+
+  reclonetwitt: (
+    base: #ee5595,
+    contrast: #000000
+  ),
+
+  headerColor: (
+    base: #04B404,
+    contrast: #000000
+  )
+);
+
+$text-color:#888888;
+
+$tabs-tab-color-active: #598B11;

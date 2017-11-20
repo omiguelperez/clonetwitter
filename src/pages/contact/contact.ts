@@ -18,15 +18,15 @@ export class ContactPage {
   };
 
   notifications: Array<Notification> = [
-    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omgieuleprez', text: 'platzitter es lo mas' },
+    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'platzitter es lo mas' },
     { id: 2, action: 'reclonetwitt', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'que chulo que esta esta app en iOS' },
-    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omigelperez', text: 'test 1234' },
-    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omgieuleprez', text: 'platzitter es lo mas' },
+    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'test 1234' },
+    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'platzitter es lo mas' },
     { id: 2, action: 'reclonetwitt', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'que chulo que esta esta app en iOS' },
-    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omigelperez', text: 'test 1234' },
-    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omgieuleprez', text: 'platzitter es lo mas' },
+    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'test 1234' },
+    { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'platzitter es lo mas' },
     { id: 2, action: 'reclonetwitt', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'que chulo que esta esta app en iOS' },
-    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omigelperez', text: 'test 1234' }
+    { id: 3, action: 'mention', img: 'https://pbs.twimg.com/profile_images/903694094475685888/5_piqAOV_400x400.jpg', nick_name: '@omiguelperez', text: 'test 1234' }
   ];
   
   constructor(public navCtrl: NavController) {
