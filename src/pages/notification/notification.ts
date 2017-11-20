@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-notification',
+  templateUrl: 'notification.html'
 })
-export class AboutPage {
+export class NotificationPage {
 
   notifications: Array<Notification> = [
     { id: 1, action: 'reply', img: 'https://pbs.twimg.com/profile_images/849039710978625537/YTxV5qxk_400x400.jpg', nick_name: '@freddier', text: 'platzitter es lo mas' },
