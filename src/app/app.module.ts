@@ -15,6 +15,8 @@ import { LoginPage } from '../pages/login/login';
 import { VerNotificationPage } from '../pages/notification/verNotification';
 import { Fav } from '../components/fav/fav';
 
+import { UserService } from '../services/user.service';
+
 let routerConfig = {
   links: [
     { component: LoginPage, name: 'Login', segment: 'login' },
@@ -51,7 +53,8 @@ let routerConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserService
   ]
 })
 export class AppModule {}

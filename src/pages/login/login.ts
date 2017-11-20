@@ -7,6 +7,8 @@ import {
 } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 
+import { UserService } from '../../services/user.service';
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
@@ -18,7 +20,8 @@ export class LoginPage {
   constructor(
     private alertController:AlertController, 
     public loadingController: LoadingController,
-    public navController: NavController
+    public navController: NavController,
+    private userService: UserService
   ) {
 
   }
@@ -33,14 +36,25 @@ export class LoginPage {
         content: 'Please wait...'
       });
       loading.present();
-      setTimeout(() => {
-        loading.dismiss();
-        this.navController.push(TabsPage);
-      }, 1000);
+
+      this.userService.loginUser(this.user.email, this.user.password)
+        .then(response => {
+          loading.dismiss();
+          if (response !== undefined) {
+            this.navController.push(TabsPage);
+          } else {
+            let alert = this.alertController.create({
+              title: 'Login',
+              subTitle: 'Usuario y/o contraseña incorrectos..',
+              buttons: ['Aceptar']
+            });
+            alert.present();
+          }
+        });
     } else {
       let alert = this.alertController.create({
         title: 'Login',
-        subTitle: 'Login incorrecto',
+        subTitle: 'Complete los campos.',
         buttons: ['Aceptar']
       });
       alert.present();
